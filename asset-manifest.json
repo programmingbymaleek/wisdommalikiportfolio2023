@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/wisdommalikiportfolio2023/static/css/main.82c29fe3.css",
+    "main.js": "/wisdommalikiportfolio2023/static/js/main.c90eeb79.js",
+    "static/js/787.30394886.chunk.js": "/wisdommalikiportfolio2023/static/js/787.30394886.chunk.js",
+    "static/media/collections.png": "/wisdommalikiportfolio2023/static/media/collections.5949d63e6f8fc1f0e0ca.png",
+    "static/media/homePage.png": "/wisdommalikiportfolio2023/static/media/homePage.06d1be3e968db4f7eb0b.png",
+    "static/media/checkoutpage.png": "/wisdommalikiportfolio2023/static/media/checkoutpage.dbbcd901ca36c952236f.png",
+    "static/media/authentication.png": "/wisdommalikiportfolio2023/static/media/authentication.05431b64fcf84974996a.png",
+    "static/media/profilepics.jpg": "/wisdommalikiportfolio2023/static/media/profilepics.3a782f135d2c41f87805.jpg",
+    "index.html": "/wisdommalikiportfolio2023/index.html",
+    "main.82c29fe3.css.map": "/wisdommalikiportfolio2023/static/css/main.82c29fe3.css.map",
+    "main.c90eeb79.js.map": "/wisdommalikiportfolio2023/static/js/main.c90eeb79.js.map",
+    "787.30394886.chunk.js.map": "/wisdommalikiportfolio2023/static/js/787.30394886.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82c29fe3.css",
+    "static/js/main.c90eeb79.js"
+  ]
+}
