@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 function SiteMiddleDisplay() {
-  const { isPreviewActive, previewBackGround, setPreviewAndOpacity } =
+  const { isPreviewActive, previewBackGround, setPreviewAndOpacity, setNext, setPrev } =
     useContext(CreatePreviewContext);
   return (
     <ContentPreview>
@@ -22,7 +22,8 @@ function SiteMiddleDisplay() {
           >
             <AiOutlineCloseCircle />
           </motion.div>
-          <img src={previewBackGround} alt={`${""}`} />
+          <img src={previewBackGround[0].pageName} alt={`${""}`} />
+          <div className="navigateTemplate"><button onClick={() => { setPrev(previewBackGround[0]) }}>Prev</button><button onClick={() => { setNext(previewBackGround[0]) }}>Next</button></div>
         </div>
       )}
     </ContentPreview>
@@ -32,6 +33,13 @@ function SiteMiddleDisplay() {
 export default SiteMiddleDisplay;
 
 const ContentPreview = styled.div`
+.navigateTemplate{
+  width:100% !important;
+  display:flex; 
+  margin-top: 1em; 
+  gap:1em;
+  justify-content:center;
+}
   .centerDiv {
     margin: 0 auto;
     z-index: 200;

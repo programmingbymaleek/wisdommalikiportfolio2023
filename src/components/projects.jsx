@@ -1,20 +1,15 @@
 import React from "react";
 import PreviewSite from "./previewSite/previewSite.component";
-import eccomerceHomePage from "../assets/ecommencesite/homePage.png";
-import eccomercecCollections from "../assets/ecommencesite/collections.png";
-import eccomercecheckOutPage from "../assets/ecommencesite/checkoutpage.png";
-import eccomerceAuthentication from "../assets/ecommencesite/authentication.png";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { CreatePreviewContext } from "./context/sitePreviewContext";
 import { fadeIn } from "../variants";
 
 function Projects() {
-  const Eccomercesite = [
-    eccomerceHomePage,
-    eccomercecCollections,
-    eccomercecheckOutPage,
-    eccomerceAuthentication,
-  ];
+
+  const { eccommerceSiteTemplate } = useContext(CreatePreviewContext)
+
 
   return (
     <ProjectsContainer>
@@ -25,7 +20,7 @@ function Projects() {
           initial={"hidden"}
           whileInView={"show"}
         >
-          <PreviewSite SitePreview={Eccomercesite} />
+          <PreviewSite SitePreview={eccommerceSiteTemplate} />
         </motion.div>
       </div>
     </ProjectsContainer>

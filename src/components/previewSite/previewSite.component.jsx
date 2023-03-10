@@ -5,54 +5,48 @@ import { CreatePreviewContext } from "../context/sitePreviewContext";
 
 function PreviewSite({ SitePreview }) {
   const { setPreview } = useContext(CreatePreviewContext);
-  const [
-    eccomerceHomePage,
-    eccomercecCollections,
-    eccomercecheckOutPage,
-    eccomerceAuthentication,
-  ] = SitePreview;
   return (
     <SitePreviewContainer className="container">
       <div className="preview_container">
         <div
           className="one grid-row-span-2 grid-col-span-2"
           onClick={() => {
-            setPreview(true, eccomerceHomePage);
+            setPreview(true, SitePreview[0]);
           }}
         >
-          <img src={eccomerceHomePage} />
+          <img src={SitePreview[0].pageName} alt="" />
         </div>
         <div
           className="two"
           onClick={() => {
-            setPreview(true, eccomercecCollections);
+            setPreview(true, SitePreview[1]);
           }}
         >
-          <img src={eccomercecCollections} />
+          <img src={SitePreview[1].pageName} alt="" />
         </div>
         <div
           className="three"
           onClick={() => {
-            setPreview(true, eccomerceAuthentication);
+            setPreview(true, SitePreview[2]);
           }}
         >
-          <img src={eccomerceAuthentication} />
+          <img src={SitePreview[2].pageName} alt="" />
         </div>
         <div
           className="four"
           onClick={() => {
-            setPreview(true, eccomercecheckOutPage);
+            setPreview(true, SitePreview[3]);
           }}
         >
-          <img src={eccomercecheckOutPage} />
+          <img src={SitePreview[3].pageName} alt="" />
         </div>
         <div
           className="five"
           onClick={() => {
-            setPreview(true, eccomerceHomePage);
+            setPreview(true, SitePreview[0]);
           }}
         >
-          <img src={eccomerceHomePage} />
+          <img src={SitePreview[0].pageName} alt="" />
         </div>
       </div>
     </SitePreviewContainer>
