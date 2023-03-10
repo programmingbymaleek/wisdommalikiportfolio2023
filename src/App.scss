@@ -1,0 +1,27 @@
+
+.App {
+ 
+}
+/* .container{
+  position: relative !important;
+} */
+.light{
+  padding: 2rem 0rem !important;
+  // background-color: #102F3B ;
+  // background: radial-gradient(#fc466b, #102F3B, #3f5efb);
+  background: linear-gradient(to bottom left, #102F3B, #3f5efb);
+  color:white;
+}
+.dark{
+  padding: 2rem 0rem !important;
+  background-color: black ;
+color:white ;
+}
+.section{
+  min-height: 100vh;
+  
+}
+
+
+
+
