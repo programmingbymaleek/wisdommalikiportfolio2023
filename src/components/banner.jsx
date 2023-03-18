@@ -152,11 +152,11 @@ font-size:20px;
   .picsContainer{
     border-top-right-radius:4rem;
     border-bottom-left-radius:4rem;
-    border:3px solid white;
+    box-shadow:.5rem .5rem .5rem white; 
    width: 30rem;
     height: 30rem;
     img{
-      object-fit:contain;
+      object-fit:cover;
      width:100%;
       height:100%;
       border-top-right-radius:4rem;

@@ -73,7 +73,7 @@ const SitePreviewContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    width: min(100%, 60rem);
+    width: min(100%, 90rem);
 
     * {
       min-height: 15rem;
