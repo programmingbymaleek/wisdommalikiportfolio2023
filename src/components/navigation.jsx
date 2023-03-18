@@ -53,9 +53,13 @@ const NavContainer = styled.div`
     .content {
       display: flex;
       color: blue;
-      padding: 0 16rem;
+      padding: 1rem 4rem;
+      border-radius:2rem; 
       gap: 3rem;
       font-size: 30px;
+      background-color: rgba(255,255,255, .5);
+      justify-content: space-evenly;
+      width:40rem; 
       .active {
         color: red;
       }

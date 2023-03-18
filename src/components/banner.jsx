@@ -73,17 +73,17 @@ function Banner() {
           viewport={{ once: false, amount: 0.7 }}
           className="portfolioRef"
         >
-          <a href="#" className="portFirst">
+          <a href="#projects" className="portFirst">
             Check out my Amazing work
           </a>
           <div className="socials">
-            <a href="#">
+            <a href="https://github.com/programmingbymaleek" target="_blank">
               <FaGithub />
             </a>
-            <a href="#">
+            <a href="linkedin.com/in/maliki-wisdom-509b5a142" target={'_blank'}>
               <BsLinkedin />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/watch?v=dE5N8YnkzJA" target={'_blank'}>
               <FaYoutube />
             </a>
           </div>

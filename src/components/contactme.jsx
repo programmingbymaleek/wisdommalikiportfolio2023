@@ -1,28 +1,73 @@
-import React from "react";
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import styled from "styled-components";
-import Thankyou from "./thankyou";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+
 
 function Contactme() {
+  const defaultFormField = {
+    sender_email: '',
+    fullname: '',
+    message: ''
+  }
+
+  const [formField, setFormField] = useState(defaultFormField);
+
+  const { sender_email, fullname, message } = formField;
+
+  const onChangeHandler = (e) => {
+    const { name, value } = e.target;
+    setFormField({ ...formField, [name]: value });
+  }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_PUBLIC_KEY)
+      .then((result) => {
+        alert('Email has been sent')
+        setFormField(defaultFormField);
+      }, (error) => {
+        alert('There was an error sendin your message', error.message);
+      });
+  };
   return (
     <ContactmeContainer className="section" id="contact">
       <div className="body">
-        <div className="sections"><h4>Get in touch </h4>
+        <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial={"hidden"}
+          whileInView={"show"}
+          className="sections"><h4>Get in touch </h4>
           <h2>Let's work<br /> together !</h2>
-        </div>
-        <form className="c-form" action="https://formsubmit.co/wisdommaliki19@gmail.com" method="POST">
-          <input className="customInput" placeholder="Your email" type='email' required />
-          {/* <input type="hidden" name="_next" value={`https://https://github.com/programmingbymaleek/Myportfolio/${<Thankyou />}`} /> */}
-          <input className="customInput" placeholder="Your Name" type='text' required />
-          <textarea className="customInput" placeholder="Your message" type='text' required />
+        </motion.div>
+        <motion.form
+          variants={fadeIn("up", 0.3)}
+          initial={"hidden"}
+          whileInView={"show"}
+          className="c-form" ref={form} onSubmit={sendEmail}>
+          <input className="customInput" placeholder="Your email" type='email' name="sender_email" value={sender_email} onChange={onChangeHandler} required />
+          <input className="customInput" placeholder="Your Name" type='text' name="fullname" value={fullname} onChange={onChangeHandler} required />
+          <textarea className="customInput" placeholder="Your message" type='text' name="message" value={message} onChange={onChangeHandler} required />
           <button type="submit">send message</button>
-        </form>
+        </motion.form>
 
       </div>
+      <p>just checking {process.env.REACT_APP_TESTKEY}</p>
     </ContactmeContainer>
   );
 }
+
+
+
+
 
 export default Contactme;
 
