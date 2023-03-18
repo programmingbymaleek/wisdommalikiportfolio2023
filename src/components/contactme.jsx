@@ -13,7 +13,7 @@ function Contactme() {
         </div>
         <form className="c-form" action="https://formsubmit.co/wisdommaliki19@gmail.com" method="POST">
           <input className="customInput" placeholder="Your email" type='email' required />
-          <input type="hidden" name="_next" value={`https://https://github.com/programmingbymaleek/Myportfolio/${<Thankyou />}`} />
+          {/* <input type="hidden" name="_next" value={`https://https://github.com/programmingbymaleek/Myportfolio/${<Thankyou />}`} /> */}
           <input className="customInput" placeholder="Your Name" type='text' required />
           <textarea className="customInput" placeholder="Your message" type='text' required />
           <button type="submit">send message</button>
