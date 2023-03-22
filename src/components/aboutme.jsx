@@ -22,7 +22,7 @@ function Aboutme() {
               functional, and responsive websites that deliver exceptional user
               experiences. My expertise in HTML, CSS, JavaScript, Jquery,
               TypeScript, React and other web development technologies allows me
-              to bring my anyone's visions to life. I am Skilled in developing responsive and scalable web applications, passionate about creating user-friendly interfaces and solving complex problems with elegant solutions. I have Strong communication skills and ability to work well in a team environment. Additionally, I have experience with ETL tools and data integration. Take a look at my portfolio to see some of my recent work and get in touch. I look forward to working with you!
+              to bring anyone's visions to life. I am Skilled in developing responsive and scalable web applications, passionate about creating user-friendly interfaces and solving complex problems with elegant solutions. I have Strong communication skills and ability to work well in a team environment. Additionally, I have experience with ETL tools and data integration. Take a look at my portfolio to see some of my recent work and get in touch. I look forward to working with you!
             </p>
           </div>
         </div>
