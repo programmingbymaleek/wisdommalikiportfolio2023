@@ -23,9 +23,8 @@ function App() {
 
   return (
     <div
-      className={`App ${
-        mode === true ? `${ModeChange.light}` : ModeChange.dark
-      }`}
+      className={`App ${mode === true ? `${ModeChange.dark}` : ModeChange.light
+        }`}
     >
       <div className="container">
         <div style={{ opacity: opacity }}>

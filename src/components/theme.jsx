@@ -11,9 +11,9 @@ function Theme() {
       <div className="container">
         <div className="me">
           {mode ? (
-            <span className="mode">Light</span>
-          ) : (
             <span className="mode">Dark</span>
+          ) : (
+            <span className="mode">Blue</span>
           )}
           <ReactSwitch
             onChange={toogleFunc}

@@ -22,58 +22,8 @@ function Aboutme() {
               functional, and responsive websites that deliver exceptional user
               experiences. My expertise in HTML, CSS, JavaScript, Jquery,
               TypeScript, React and other web development technologies allows me
-              to bring my anyone's visions to life. I am Skilled in developing responsive and scalable web applications, passionate about creating user-friendly interfaces and solving complex problems with elegant solutions.I have Strong communication skills and ability to work well in a team environment. Additionally, I have experience with ETL tools and data integration. Take a look at my portfolio to see some of my recent work and get in touch. I look forward to working with you!
+              to bring my anyone's visions to life. I am Skilled in developing responsive and scalable web applications, passionate about creating user-friendly interfaces and solving complex problems with elegant solutions. I have Strong communication skills and ability to work well in a team environment. Additionally, I have experience with ETL tools and data integration. Take a look at my portfolio to see some of my recent work and get in touch. I look forward to working with you!
             </p>
-            <div className="yearsOFExperience">
-              <div className="">
-                <div>
-                  {inView ? (
-                    <CountUp
-                      start={1}
-                      end={4}
-                      duration={6}
-                      className="spanClass"
-                    />
-                  ) : null}
-                </div>
-                <div className="spanMe">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div className="">
-                <div>
-                  {inView ? (
-                    <CountUp
-                      start={1}
-                      end={15}
-                      duration={6}
-                      className="spanClass"
-                    />
-                  ) : null}
-                </div>
-                <div className="spanMe">
-                  Project <br />
-                  Completed
-                </div>
-              </div>
-              <div className="">
-                <div>
-                  {inView ? (
-                    <CountUp
-                      start={1}
-                      end={13}
-                      duration={6}
-                      className="spanClass"
-                    />
-                  ) : null}
-                </div>
-                <div className="spanMe">
-                  Satisfied <br />
-                  Customers
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
