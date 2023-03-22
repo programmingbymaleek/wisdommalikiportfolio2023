@@ -58,9 +58,7 @@ function Contactme() {
           <textarea className="customInput" placeholder="Your message" type='text' name="message" value={message} onChange={onChangeHandler} required />
           <button type="submit">send message</button>
         </motion.form>
-
       </div>
-      <p>just checking {process.env.REACT_APP_TESTKEY}</p>
     </ContactmeContainer>
   );
 }
@@ -72,73 +70,119 @@ function Contactme() {
 export default Contactme;
 
 const ContactmeContainer = styled.div`
-.c-form{
-  display:flex; 
-  border:1px solid white; 
-  flex-direction:column;
-  padding:2rem; 
-  justify-content:space-evenly; 
-  border-radius:1rem;
-
-}
-textarea{
-  padding-top:2rem;
-  resize:none; 
-  min-height: 7rem; 
-}
-.customInput{
-  margin-top:.5rem; 
-  background:transparent; 
-  border:none;
-  border-bottom:1px solid white; 
-  width:30rem;
-  outline:none;
-  caret-color: white; 
-  padding-bottom: 1rem; 
-  color:white; 
-  :focus{
-    border-bottom:1px solid yellow; 
+  margin-top: 15rem;
+  .c-form {
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 40rem;
+    border-radius: 1rem;
   }
-}
-.body{
-  
-  margin-top:2rem; 
-  width:100%; 
-  display:flex; 
-  justify-content: space-between; 
-  height:30rem; 
-}
-.sections{
-
-align-self:center;  
-  h4{
-   text-transform:upperCase; 
-   background-color:white; 
-   display:inline-block; 
-   padding:1rem;
-   color:black;
+  textarea {
+    padding-top: 2rem;
+    resize: none;
+    min-height: 7rem;
   }
-  h2{
-    margin-top:1rem; 
-    font-size:5rem; 
+  .customInput {
+    margin-top: 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 30rem;
+    outline: none;
+    caret-color: white;
+    padding-bottom: 1rem;
+    color: white;
+    :focus {
+      border-bottom: 1px solid yellow;
+    }
+  }
+  .body {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 30rem;
+  }
+  .sections {
+    align-self: center;
+    h4 {
+      text-transform: upperCase;
+      background-color: white;
+      display: inline-block;
+      padding: 1rem;
+      color: black;
+    }
+    h2 {
+      margin-top: 1rem;
+      font-size: 5rem;
+      font-family: "Rubik Wet Paint", cursive;
+    }
+  }
+  button {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 0.9em;
+    font-weight: 600;
     font-family: "Rubik Wet Paint", cursive;
+    :hover {
+      background-color: yellow;
+    }
   }
-}
-button{
-  text-transform:uppercase; 
-  margin-top:2rem; 
- 
-  padding:1rem;
-  border-radius:1rem;
-  font-size:.9em;
-  font-weight:600;
-  font-family: "Rubik Wet Paint", cursive;
-  :hover{
-    background-color:yellow; 
 
+  @media (max-width: 1200px) {
+    .c-form {
+      min-width: 25rem;
+    }
+    .customInput {
+      width: 25rem;
+    }
   }
-}
+  @media (max-width: 995px) {
+    .c-form {
+      min-width: 20;
+    }
+    .customInput {
+      width: 20rem;
+    }
+  }
 
-`
+  @media (max-width: 960px) {
+    .body {
+      flex-direction: column;
+    }
+    .c-form {
+      min-width: 20;
+    }
+    .customInput {
+      width: 35rem;
+    }
+  }
+  @media (max-width: 772px) {
+    .customInput {
+      width: 25rem;
+    }
+  }
+  @media (max-width: 772px) {
+    .c-form {
+      min-width: 15rem;
+    }
+    .customInput {
+      width: 20rem;
+    }
+  }
+  @media (max-width: 360px) {
+    .c-form {
+      min-width: 10rem;
+    }
+    .customInput {
+      width: 15rem;
+    }
+  }
+`;
 
 

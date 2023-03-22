@@ -2,54 +2,61 @@ import React from "react";
 import styled from "styled-components";
 import { useContext } from "react";
 import { CreatePreviewContext } from "../context/sitePreviewContext";
+import ViewsiteAndTechStack from "../viewsiteAndTechStack/viewsiteAndTechStack";
 
-function PreviewSite({ SitePreview }) {
+function PreviewSite(props) {
+  const { SitePreview, SiteAsset } = { ...props };
   const { setPreview } = useContext(CreatePreviewContext);
+  console.log(SitePreview);
   return (
-    <SitePreviewContainer className="container">
-      <div className="preview_container">
-        <div
-          className="one grid-row-span-2 grid-col-span-2"
-          onClick={() => {
-            setPreview(true, SitePreview[0]);
-          }}
-        >
-          <img src={SitePreview[0].pageName} alt="" />
+    <div>
+      <SitePreviewContainer className="container">
+        <div className="preview_container">
+          <div
+            className="one grid-row-span-2 grid-col-span-2"
+            onClick={() => {
+              setPreview(true, SitePreview[0]);
+            }}
+          >
+            <img src={SitePreview[0].pageName} alt="" />
+          </div>
+          <div
+            className="two"
+            onClick={() => {
+              setPreview(true, SitePreview[1]);
+            }}
+          >
+            <img src={SitePreview[1].pageName} alt="" />
+          </div>
+          <div
+            className="three"
+            onClick={() => {
+              setPreview(true, SitePreview[2]);
+            }}
+          >
+            <img src={SitePreview[2].pageName} alt="" />
+          </div>
+          <div
+            className="four"
+            onClick={() => {
+              setPreview(true, SitePreview[3]);
+            }}
+          >
+            <img src={SitePreview[3].pageName} alt="" />
+          </div>
+          <div
+            className="five"
+            onClick={() => {
+              setPreview(true, SitePreview[0]);
+            }}
+          >
+            <img src={SitePreview[0].pageName} alt="" />
+          </div>
         </div>
-        <div
-          className="two"
-          onClick={() => {
-            setPreview(true, SitePreview[1]);
-          }}
-        >
-          <img src={SitePreview[1].pageName} alt="" />
-        </div>
-        <div
-          className="three"
-          onClick={() => {
-            setPreview(true, SitePreview[2]);
-          }}
-        >
-          <img src={SitePreview[2].pageName} alt="" />
-        </div>
-        <div
-          className="four"
-          onClick={() => {
-            setPreview(true, SitePreview[3]);
-          }}
-        >
-          <img src={SitePreview[3].pageName} alt="" />
-        </div>
-        <div
-          className="five"
-          onClick={() => {
-            setPreview(true, SitePreview[0]);
-          }}
-        >
-          <img src={SitePreview[0].pageName} alt="" />
-        </div>
-      </div>
-    </SitePreviewContainer>
+      </SitePreviewContainer>
+
+      <ViewsiteAndTechStack SiteAsset={SiteAsset} />
+    </div>
   );
 }
 
@@ -77,6 +84,12 @@ const SitePreviewContainer = styled.div`
 
     * {
       min-height: 15rem;
+    }
+  }
+
+  @media (max-width: 792px) {
+    .preview_container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

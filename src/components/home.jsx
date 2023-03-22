@@ -7,8 +7,8 @@ function Home() {
       <div className="" id="home">
         {/* {logo} */}
         <div className="logo">
-          <span>Wilmatech </span>
-          <span> Enterprise</span>
+          {/* <span>Wilmatech </span>
+          <span> Enterprise</span> */}
         </div>
       </div>
     </HomeContainer>

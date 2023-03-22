@@ -5,10 +5,16 @@ import { CreatePreviewContext } from "../context/sitePreviewContext";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 function SiteMiddleDisplay() {
-  const { isPreviewActive, previewBackGround, setPreviewAndOpacity, setNext, setPrev } =
-    useContext(CreatePreviewContext);
+  const {
+    isPreviewActive,
+    previewBackGround,
+    setPreviewAndOpacity,
+    setNext,
+    setPrev,
+  } = useContext(CreatePreviewContext);
   return (
     <ContentPreview>
       {isPreviewActive && (
@@ -23,7 +29,22 @@ function SiteMiddleDisplay() {
             <AiOutlineCloseCircle />
           </motion.div>
           <img src={previewBackGround[0].pageName} alt={`${""}`} />
-          <div className="navigateTemplate"><button onClick={() => { setPrev(previewBackGround[0]) }}>Prev</button><button onClick={() => { setNext(previewBackGround[0]) }}>Next</button></div>
+          <div className="navigateTemplate">
+            <button
+              onClick={() => {
+                setPrev(previewBackGround[0]);
+              }}
+            >
+              <GrPrevious />
+            </button>
+            <button
+              onClick={() => {
+                setNext(previewBackGround[0]);
+              }}
+            >
+              <GrNext className="test" />
+            </button>
+          </div>
         </div>
       )}
     </ContentPreview>
@@ -33,25 +54,31 @@ function SiteMiddleDisplay() {
 export default SiteMiddleDisplay;
 
 const ContentPreview = styled.div`
-.navigateTemplate{
-  width:100% !important;
-  display:flex; 
-  margin-top: 1em; 
-  gap:1em;
-  justify-content:center;
-}
+
+  .navigateTemplate {
+    width: 100% !important;
+    display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    justify-content: center;
+    button {
+      padding: 0.5rem;
+      background: transparent;
+      border: none;
+      color: white !important;
+      font-size: 2rem;
+    }
+  }
   .centerDiv {
-    margin: 0 auto;
-    z-index: 200;
-    top: 22%;
-    left: 28%;
-    width: 80em;
-    height: 45em;
-    margin-top: -9em;
-    margin-left: -15em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 20rem;
+    height: 60rem;
 
     position: fixed;
-    // border: 1px solid white;
+
     img {
       width: 100%;
       height: 100%;
@@ -80,4 +107,26 @@ const ContentPreview = styled.div`
       }
     }
   }
+
+  @media (max-width: 792px) {
+    .centerDiv {
+      min-width: 30rem;
+      height: 30rem;
+    }
+  }
+  @media (max-width: 1190px) {
+    .centerDiv {
+      min-width: 40rem;
+      height: 40rem;
+    }
+    @media (max-width: 674px) {
+      .centerDiv {
+        min-width: 25rem;
+        height: 25rem;
+      }
+      @media (max-width: 401px) {
+        .centerDiv {
+          min-width: 20rem;
+          height: 20rem;
+        }
 `;

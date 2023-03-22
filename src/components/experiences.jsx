@@ -11,7 +11,7 @@ function Experiences() {
           <h1 className="exp">Experience</h1>
         </div>
         <div className="container experience-wrapper">
-          <div className="timeline-block timeline-block-right">
+          <div className="timeline-block timeline-block-left">
             <div className="marker"></div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -20,7 +20,7 @@ function Experiences() {
               className="timeline-content"
             >
               <h3 className="date" style={{ textAlign: "center" }}>
-                2018-2019
+                2016-2017
               </h3>
               <h4 className="header">Database Administrator Internship</h4>
               <h4 className="header">Nigerian Television Authority</h4>
@@ -39,6 +39,54 @@ function Experiences() {
               </ul>
             </motion.div>
           </div>
+          <div className="timeline-block timeline-block-right">
+            <div className="marker"></div>
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial={"hidden"}
+              whileInView={"show"}
+              className="timeline-content"
+            >
+              <h3 className="date" style={{ textAlign: "center" }}>
+                2017-2019
+              </h3>
+              <h4 className="header">Java Developer </h4>
+              <h4 className="header">Freelance Wilmatech Enterprise</h4>
+              <ul>
+                <li>Created robust Java codes for various applications.</li>
+                <li>
+                  Coordinated system installations, testing and code
+                  corrections.
+                </li>
+                <li>
+                  Analyzed code and debugged errors to improve system
+                  performance.
+                </li>
+                <li>
+                  Developed and altered applications to meet changing market
+                  trends and individual customer demands.
+                </li>
+                <li>
+                  Programmed applications and tools using object-oriented
+                  languages with goals of code abstraction, stability and reuse.
+                </li>
+                <li>
+                  Identified opportunities for process improvements to decrease
+                  in support calls.
+                </li>
+                <li>
+                  Created technical workflows on youtube to support education
+                  and training of new java software developers through my
+                  youtube channel
+                </li>
+                <li>
+                  Leveraged Agile methodologies to move development lifecycle
+                  rapidly through initial prototyping to enterprise-quality
+                  testing and final implementation.¬¬
+                </li>
+              </ul>
+            </motion.div>
+          </div>
           {/*  */}
           <div className="timeline-block timeline-block-left">
             <div className="marker"></div>
@@ -49,10 +97,54 @@ function Experiences() {
               className="timeline-content"
             >
               <h3 className="date" style={{ textAlign: "center" }}>
+                2019-2020
+              </h3>
+              <h4 className="header">Product Support Engineer {`(ELS)`}</h4>
+              <h4 className="header">Daifuku/Elite Line Services </h4>
+              <ul>
+                <li>
+                  Provided technical support to customers for software issues
+                  via phone, email and chat.
+                </li>
+                <li>
+                  Documented and tracked customer issues in JIRA and followed up
+                  with customers until issues were resolved.
+                </li>
+                <li>
+                  Troubleshot and resolved issues related to software
+                  installation, configuration and usage.
+                </li>
+                <li>
+                  Conducted root cause analysis and worked with software
+                  development teams to identify and implement solutions.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to ensure timely
+                  resolution of customer issues.
+                </li>
+                <li>
+                  Developed and maintained knowledge base articles and other
+                  support documentation.
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+          {/*  */}
+          <div className="timeline-block timeline-block-right">
+            <div className="marker"></div>
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial={"hidden"}
+              whileInView={"show"}
+              className="timeline-content"
+            >
+              <h3 className="date" style={{ textAlign: "center" }}>
                 2020-2021
               </h3>
-              <h4 className="header">Elite Line Services {`(ELS)`}</h4>
-              <h4 className="header">Software Engineer(Front-End) Contract </h4>
+              <h4 className="header">Henry Schein One</h4>
+              <h4 className="header">
+                Software Developer {`(Front End Engineer)`}
+              </h4>
               <ul>
                 <li>Designed web applications for multiple clients.</li>
                 <li>
@@ -68,15 +160,12 @@ function Experiences() {
                   use in marketing.
                 </li>
                 <li>
-                  Reviewed information and elements regularly on websites and
-                  pages for accuracy and functionality.
-                </li>
-                <li>
                   Established hosting for each website and completed go-live
                   process by uploading sites to host account.
                 </li>
+
                 <li>
-                  Coordinated system installations, testing and code corrections
+                  Coordinate system installations, testing and code corrections
                 </li>
                 <li>
                   Delivered end-user training on content management systems
@@ -87,6 +176,7 @@ function Experiences() {
                   Contributed back-end development experience and collaborated
                   on multiple APIs crucial to functionality.
                 </li>
+
                 <li>
                   Developed and altered applications to meet changing market
                   trends and individual customer demands
@@ -110,8 +200,8 @@ function Experiences() {
               </ul>
             </motion.div>
           </div>
-          {/*  */}
-          <div className="timeline-block timeline-block-right">
+
+          <div className="timeline-block timeline-block-left">
             <div className="marker"></div>
             <motion.div
               variants={fadeIn("up", 0.3)}
@@ -122,7 +212,7 @@ function Experiences() {
               <h3 className="date" style={{ textAlign: "center" }}>
                 2021-Current
               </h3>
-              <h4 className="header">Henry Schein One</h4>
+              <h4 className="header">SS&C Denver C0 </h4>
               <h4 className="header">
                 Software Developer {`(Front End Engineer)`}
               </h4>

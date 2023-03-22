@@ -26,8 +26,7 @@ function Aboutme() {
               simple, static website or a complex, interactive web application,
               I have the skills and experience to deliver results that exceed
               your expectations. Take a look at my portfolio to see some of my
-              recent work and get in touch to discuss your project. I look
-              forward to working with you!
+              recent work and get in touch. I look forward to working with you!
             </p>
             <div className="yearsOFExperience">
               <div className="">
@@ -89,6 +88,11 @@ function Aboutme() {
 export default Aboutme;
 
 const AboutmeContainer = styled.div`
+  @media (max-width: 460px) {
+    .yearsOFExperience {
+      flex-direction: column;
+    }
+  }
   padding: 2rem 0;
   .spanMe {
     font-family: "Kanit", sans-serif;

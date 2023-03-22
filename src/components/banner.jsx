@@ -63,8 +63,7 @@ function Banner() {
           A good web design is essential for connecting with potential customers
           and driving sales. By prioritizing clear navigation, mobile
           responsiveness, fast load times, strong branding, compelling content,
-          and easy contact, I can create a website that stands out from your
-          competitors and helps your business succeed online.
+          and easy contact, I can create a website that stands out from others.
         </motion.p>
         <motion.div
           variants={fadeIn("up", 0.7)}
@@ -80,10 +79,13 @@ function Banner() {
             <a href="https://github.com/programmingbymaleek" target="_blank">
               <FaGithub />
             </a>
-            <a href="linkedin.com/in/maliki-wisdom-509b5a142" target={'_blank'}>
+            <a href="linkedin.com/in/maliki-wisdom-509b5a142" target={"_blank"}>
               <BsLinkedin />
             </a>
-            <a href="https://www.youtube.com/watch?v=dE5N8YnkzJA" target={'_blank'}>
+            <a
+              href="https://www.youtube.com/watch?v=dE5N8YnkzJA"
+              target={"_blank"}
+            >
               <FaYoutube />
             </a>
           </div>
@@ -96,74 +98,79 @@ function Banner() {
 export default Banner;
 
 const BannerContainer = styled.div`
-margin:5rem 0rem;
+  margin: 5rem 0rem;
+  @media (max-width: 460px) {
+    .profilePicsContainer {
+      display: none;
+      width: 5rem;
+      height: 5rem;
+      .picsContainer {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+  .intro {
+    font-size: 24px;
+    font-family: "Shantell Sans", cursive;
+  }
+  .whatIdo {
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: 2rem;
+  }
 
-@media (max-width: 960px) {
- flex-direction:column;
-}
-.intro{
-  font-size:24px;
-  font-family: 'Shantell Sans', cursive;
-}
-.whatIdo{
-  font-family: 'Rubik Wet Paint', cursive;
-  font-size:2rem;
-
-}
-
-.name{
-  font-family: 'Rubik Wet Paint', cursive;
-  font-size:5rem;
-}
+  .name {
+    font-family: "Rubik Wet Paint", cursive;
+    font-size: 5rem;
+  }
   display: flex;
   gap: 4rem;
-  align-items:center;
-  .socials{
-    display:flex;
-    gap:2rem;
-   a{
-    color:white;
-    font-size:1.5rem;
-   }
-  }
-
-.portfolioRef{
-  display:flex;
-  flex-direction:row-reverse;
-  justify-content:space-evenly;
-  .portFirst{
-    text-decoration:none;
-    border:1px solid white;
-    padding:.5rem;
-    background-color:#FFFFFF;
-    font-family: 'Rubik Wet Paint', cursive;
-    color:black;
-    border-radius:.5rem;
-  
-  }
-
-}
-.bannertopic{
-align-self:center;
-font-size:20px;
-}
-
-
-  .picsContainer{
-    border-top-right-radius:4rem;
-    border-bottom-left-radius:4rem;
-    box-shadow:.5rem .5rem .5rem white; 
-   width: 30rem;
-    height: 30rem;
-    img{
-      object-fit:cover;
-     width:100%;
-      height:100%;
-      border-top-right-radius:4rem;
-      border-bottom-left-radius:4rem; 
+  align-items: center;
+  .socials {
+    display: flex;
+    gap: 2rem;
+    a {
+      color: white;
+      font-size: 1.5rem;
     }
-
   }
 
-  .
+  .portfolioRef {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    .portFirst {
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 0.5rem;
+      background-color: #ffffff;
+      font-family: "Rubik Wet Paint", cursive;
+      color: black;
+      border-radius: 0.5rem;
+    }
+  }
+  .bannertopic {
+    align-self: center;
+    font-size: 20px;
+  }
+
+  .picsContainer {
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem white;
+    width: 30rem;
+    height: 30rem;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 4rem;
+      border-bottom-left-radius: 4rem;
+    }
+  }
 `;

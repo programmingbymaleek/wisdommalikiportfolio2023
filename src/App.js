@@ -30,13 +30,13 @@ function App() {
       <div className="container">
         <div style={{ opacity: opacity }}>
           <Theme />
-          <Navigation />
           <Home />
           <Banner />
           <Aboutme />
           <Experiences />
           <Projects />
           <Contactme />
+          <Navigation />
         </div>
         <SiteMiddleDisplay />
       </div>
