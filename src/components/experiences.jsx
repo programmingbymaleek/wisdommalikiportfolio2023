@@ -146,7 +146,10 @@ function Experiences() {
                 Software Developer {`(Front End Engineer)`}
               </h4>
               <ul>
-                <li>Designed web applications for multiple clients.</li>
+                <li>Designed web applications and practise management softwres for multiple clients.</li>
+                <li>
+                  Created and updated re-usable UI components for practise management web applications using react.
+                </li>
                 <li>
                   Designed visual and graphic images to use on multiple
                   platforms.
@@ -156,11 +159,7 @@ function Experiences() {
                   across multiple websites
                 </li>
                 <li>
-                  Created web materials such as images and redirect links for
-                  use in marketing.
-                </li>
-                <li>
-                  Established hosting for each website and completed go-live
+                  Established hosting for each web application and completed go-live
                   process by uploading sites to host account.
                 </li>
 
@@ -178,7 +177,7 @@ function Experiences() {
                 </li>
 
                 <li>
-                  Developed and altered applications to meet changing market
+                  Developed and altered web applications to meet changing market
                   trends and individual customer demands
                 </li>
                 <li>
