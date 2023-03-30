@@ -36,59 +36,22 @@ function Experiences() {
                   Specified user access levels for each database segment to
                   protect database integrity and company information.
                 </li>
-              </ul>
-            </motion.div>
-          </div>
-          <div className="timeline-block timeline-block-right">
-            <div className="marker"></div>
-            <motion.div
-              variants={fadeIn("up", 0.7)}
-              initial={"hidden"}
-              whileInView={"show"}
-              className="timeline-content"
-            >
-              <h3 className="date" style={{ textAlign: "center" }}>
-                2017-2019
-              </h3>
-              <h4 className="header">Java Developer </h4>
-              <h4 className="header">Freelance Wilmatech Enterprise</h4>
-              <ul>
-                <li>Created robust Java codes for various applications.</li>
-                <li>
-                  Coordinated system installations, testing and code
-                  corrections.
-                </li>
-                <li>
-                  Analyzed code and debugged errors to improve system
-                  performance.
-                </li>
-                <li>
-                  Developed and altered applications to meet changing market
-                  trends and individual customer demands.
-                </li>
-                <li>
-                  Programmed applications and tools using object-oriented
-                  languages with goals of code abstraction, stability and reuse.
-                </li>
-                <li>
-                  Identified opportunities for process improvements to decrease
-                  in support calls.
-                </li>
-                <li>
-                  Created technical workflows on youtube to support education
-                  and training of new java software developers through my
-                  youtube channel
-                </li>
-                <li>
-                  Leveraged Agile methodologies to move development lifecycle
-                  rapidly through initial prototyping to enterprise-quality
-                  testing and final implementation.¬¬
+                <li> Assisted in the design and implementation of the
+                  company's database systems.</li>
+                <li> Performed regular maintenance tasks, including data
+                  backups and system updates.</li>
+                <li> Monitored database performance and made necessary
+                  optimizations to improve efficiency.</li>
+                <li> Assisted in troubleshooting and resolving database
+                  issues.</li>
+                <li> Worked with cross-functional teams to ensure database
+                  integrations and compatibility with other systems
                 </li>
               </ul>
             </motion.div>
           </div>
           {/*  */}
-          <div className="timeline-block timeline-block-left">
+          <div className="timeline-block timeline-block-right">
             <div className="marker"></div>
             <motion.div
               variants={fadeIn("down", 0.7)}
@@ -97,10 +60,10 @@ function Experiences() {
               className="timeline-content"
             >
               <h3 className="date" style={{ textAlign: "center" }}>
-                2019-2020
+                2017-2018
               </h3>
               <h4 className="header">Product Support Engineer {`(ELS)`}</h4>
-              <h4 className="header">Daifuku/Elite Line Services </h4>
+              <h4 className="header">Daifuku/Elite Line Services {` (Contractor- Amazon) `}</h4>
               <ul>
                 <li>
                   Provided technical support to customers for software issues
@@ -130,7 +93,7 @@ function Experiences() {
             </motion.div>
           </div>
           {/*  */}
-          <div className="timeline-block timeline-block-right">
+          <div className="timeline-block timeline-block-left">
             <div className="marker"></div>
             <motion.div
               variants={fadeIn("up", 0.3)}
@@ -139,17 +102,14 @@ function Experiences() {
               className="timeline-content"
             >
               <h3 className="date" style={{ textAlign: "center" }}>
-                2020-2021
+                2018-2020
               </h3>
               <h4 className="header">Henry Schein One</h4>
               <h4 className="header">
-                Software Developer {`(Front End Engineer)`}
+                Front End Software Engineer
               </h4>
               <ul>
-                <li>Designed web applications and practise management softwres for multiple clients.</li>
-                <li>
-                  Created and updated re-usable UI components for practise management web applications using react.
-                </li>
+                <li>Designed web applications and practise management softwares for multiple clients.</li>
                 <li>
                   Designed visual and graphic images to use on multiple
                   platforms.
@@ -200,7 +160,7 @@ function Experiences() {
             </motion.div>
           </div>
 
-          <div className="timeline-block timeline-block-left">
+          <div className="timeline-block timeline-block-right">
             <div className="marker"></div>
             <motion.div
               variants={fadeIn("up", 0.3)}
@@ -209,7 +169,7 @@ function Experiences() {
               className="timeline-content"
             >
               <h3 className="date" style={{ textAlign: "center" }}>
-                2021-Current
+                2020-Current
               </h3>
               <h4 className="header">SS&C Denver C0 </h4>
               <h4 className="header">
@@ -220,6 +180,15 @@ function Experiences() {
                   Developed user interface using HTML,CSS,Sass, Jquery and
                   React.
                 </li>
+                <li> Led the development of several high-profile web
+                  applications using React, Redux, Webpack, jQuery,
+                  Node.js, and PHP.</li>
+                <li> Developed and maintained reusable UI components
+                  and libraries.</li>
+                <li> Designed and implemented scalable front-end
+                  architectures for complex web applications</li>
+                <li>Optimized application performance and user
+                  experience through code and design improvements</li>
                 <li>Developed dynamic and cross-browser compatible pages</li>
                 <li>
                   Developed CSS styles to maintain the uniformity of all screens
@@ -235,6 +204,8 @@ function Experiences() {
                   account administration, debugging, feature enhancements and
                   documentations.
                 </li>
+                <li> Collaborated with back-end developers to integrate
+                  front-end functionality with API endpoints.</li>
 
                 <li>
                   Support regular maintenance of websites and daily updates of
