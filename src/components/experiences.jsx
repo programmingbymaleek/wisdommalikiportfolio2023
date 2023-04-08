@@ -36,15 +36,28 @@ function Experiences() {
                   Specified user access levels for each database segment to
                   protect database integrity and company information.
                 </li>
-                <li> Assisted in the design and implementation of the
-                  company's database systems.</li>
-                <li> Performed regular maintenance tasks, including data
-                  backups and system updates.</li>
-                <li> Monitored database performance and made necessary
-                  optimizations to improve efficiency.</li>
-                <li> Assisted in troubleshooting and resolving database
-                  issues.</li>
-                <li> Worked with cross-functional teams to ensure database
+                <li>
+                  {" "}
+                  Assisted in the design and implementation of the company's
+                  database systems.
+                </li>
+                <li>
+                  {" "}
+                  Performed regular maintenance tasks, including data backups
+                  and system updates.
+                </li>
+                <li>
+                  {" "}
+                  Monitored database performance and made necessary
+                  optimizations to improve efficiency.
+                </li>
+                <li>
+                  {" "}
+                  Assisted in troubleshooting and resolving database issues.
+                </li>
+                <li>
+                  {" "}
+                  Worked with cross-functional teams to ensure database
                   integrations and compatibility with other systems
                 </li>
               </ul>
@@ -62,32 +75,41 @@ function Experiences() {
               <h3 className="date" style={{ textAlign: "center" }}>
                 2017-2018
               </h3>
-              <h4 className="header">Product Support Engineer {`(ELS)`}</h4>
-              <h4 className="header">Daifuku/Elite Line Services {` (Contractor- Amazon) `}</h4>
+              <h4 className="header">
+                Certified Integration Technologist {`(C.I.T)`}
+              </h4>
+              <h4 className="header">Henry Schein</h4>
               <ul>
                 <li>
                   Provided technical support to customers for software issues
                   via phone, email and chat.
                 </li>
                 <li>
-                  Documented and tracked customer issues in JIRA and followed up
-                  with customers until issues were resolved.
+                  Carried out installation of panoramic x-rays for both new and
+                  existing dental offices across the country.
                 </li>
                 <li>
                   Troubleshot and resolved issues related to software
                   installation, configuration and usage.
                 </li>
                 <li>
-                  Conducted root cause analysis and worked with software
-                  development teams to identify and implement solutions.
+                  Performed software installations and upgrades on panoramic
+                  x-rays as well as dental application software such as Dexis,
+                  Romexis, Dentrix, eagle-soft etc.
                 </li>
                 <li>
-                  Collaborated with cross-functional teams to ensure timely
-                  resolution of customer issues.
+                  Setup internet for small and large offices, this includes,
+                  setting up modems, routers, switches firewalls (watch Guard)
+                  and computers.
                 </li>
                 <li>
-                  Developed and maintained knowledge base articles and other
-                  support documentation.
+                  Developed accurate estimates and proposals for both Internet
+                  and panoramic x-ray setup for dental Offices.
+                </li>
+                <li>Debugged and troubleshoot bugs on dental software. </li>
+                <li>
+                  Achieved 97% customer satisfaction rating based on feedback
+                  surveys
                 </li>
               </ul>
             </motion.div>
@@ -104,12 +126,15 @@ function Experiences() {
               <h3 className="date" style={{ textAlign: "center" }}>
                 2018-2020
               </h3>
-              <h4 className="header">Henry Schein One</h4>
+              <h4 className="header">Front End Software Engineer</h4>
               <h4 className="header">
-                Front End Software Engineer
+                Daifuku/Elite Line Services {` (Contractor- Amazon) `}
               </h4>
               <ul>
-                <li>Designed web applications and practise management softwares for multiple clients.</li>
+                <li>
+                  Designed web applications and practise management softwares
+                  for multiple clients.
+                </li>
                 <li>
                   Designed visual and graphic images to use on multiple
                   platforms.
@@ -119,8 +144,8 @@ function Experiences() {
                   across multiple websites
                 </li>
                 <li>
-                  Established hosting for each web application and completed go-live
-                  process by uploading sites to host account.
+                  Established hosting for each web application and completed
+                  go-live process by uploading sites to host account.
                 </li>
 
                 <li>
@@ -180,15 +205,24 @@ function Experiences() {
                   Developed user interface using HTML,CSS,Sass, Jquery and
                   React.
                 </li>
-                <li> Led the development of several high-profile web
-                  applications using React, Redux, Webpack, jQuery,
-                  Node.js, and PHP.</li>
-                <li> Developed and maintained reusable UI components
-                  and libraries.</li>
-                <li> Designed and implemented scalable front-end
-                  architectures for complex web applications</li>
-                <li>Optimized application performance and user
-                  experience through code and design improvements</li>
+                <li>
+                  {" "}
+                  Led the development of several high-profile web applications
+                  using React, Redux, Webpack, jQuery, Node.js, and PHP.
+                </li>
+                <li>
+                  {" "}
+                  Developed and maintained reusable UI components and libraries.
+                </li>
+                <li>
+                  {" "}
+                  Designed and implemented scalable front-end architectures for
+                  complex web applications
+                </li>
+                <li>
+                  Optimized application performance and user experience through
+                  code and design improvements
+                </li>
                 <li>Developed dynamic and cross-browser compatible pages</li>
                 <li>
                   Developed CSS styles to maintain the uniformity of all screens
@@ -204,8 +238,11 @@ function Experiences() {
                   account administration, debugging, feature enhancements and
                   documentations.
                 </li>
-                <li> Collaborated with back-end developers to integrate
-                  front-end functionality with API endpoints.</li>
+                <li>
+                  {" "}
+                  Collaborated with back-end developers to integrate front-end
+                  functionality with API endpoints.
+                </li>
 
                 <li>
                   Support regular maintenance of websites and daily updates of

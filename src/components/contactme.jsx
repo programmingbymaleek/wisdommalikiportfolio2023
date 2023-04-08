@@ -1,17 +1,16 @@
-import { motion } from 'framer-motion'
-import { fadeIn } from '../variants'
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 import styled from "styled-components";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { useState } from 'react';
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 function Contactme() {
   const defaultFormField = {
-    sender_email: '',
-    fullname: '',
-    message: ''
-  }
+    sender_email: "",
+    fullname: "",
+    message: "",
+  };
 
   const [formField, setFormField] = useState(defaultFormField);
 
@@ -20,23 +19,29 @@ function Contactme() {
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setFormField({ ...formField, [name]: value });
-  }
+  };
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_PUBLIC_KEY)
-      .then((result) => {
-        alert('Email has been sent')
-        setFormField(defaultFormField);
-      }, (error) => {
-        alert('There was an error sendin your message', error.message);
-      });
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          alert("Email has been sent");
+          setFormField(defaultFormField);
+        },
+        (error) => {
+          alert("There was an error sendin your message", error.message);
+        }
+      );
   };
   return (
     <ContactmeContainer className="section" id="contact">
@@ -45,17 +50,49 @@ function Contactme() {
           variants={fadeIn("down", 0.3)}
           initial={"hidden"}
           whileInView={"show"}
-          className="sections"><h4>Get in touch </h4>
-          <h2>Let's work<br /> together !</h2>
+          className="sections"
+        >
+          <h4>Get in touch </h4>
+          <h2>
+            Let's work
+            <br /> together !
+          </h2>
         </motion.div>
         <motion.form
           variants={fadeIn("up", 0.3)}
           initial={"hidden"}
           whileInView={"show"}
-          className="c-form" ref={form} onSubmit={sendEmail}>
-          <input className="customInput" placeholder="Your email" type='email' name="sender_email" value={sender_email} onChange={onChangeHandler} required />
-          <input className="customInput" placeholder="Your Name" type='text' name="fullname" value={fullname} onChange={onChangeHandler} required />
-          <textarea className="customInput" placeholder="Your message" type='text' name="message" value={message} onChange={onChangeHandler} required />
+          className="c-form"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <input
+            className="customInput"
+            placeholder="Your email"
+            type="email"
+            name="sender_email"
+            value={sender_email}
+            onChange={onChangeHandler}
+            required
+          />
+          <input
+            className="customInput"
+            placeholder="Your Name"
+            type="text"
+            name="fullname"
+            value={fullname}
+            onChange={onChangeHandler}
+            required
+          />
+          <textarea
+            className="customInput"
+            placeholder="Your message"
+            type="text"
+            name="message"
+            value={message}
+            onChange={onChangeHandler}
+            required
+          />
           <button type="submit">send message</button>
         </motion.form>
       </div>
@@ -63,14 +100,22 @@ function Contactme() {
   );
 }
 
-
-
-
-
 export default Contactme;
 
 const ContactmeContainer = styled.div`
+  textarea,
+  input {
+    ::placeholder {
+      color: white;
+      opacity: 0.7;
+    }
+  }
   margin-top: 15rem;
+
+  ::placeholder {
+    color: white !important;
+  }
+
   .c-form {
     display: flex;
     border: 1px solid white;
@@ -94,6 +139,7 @@ const ContactmeContainer = styled.div`
     width: 30rem;
     outline: none;
     caret-color: white;
+    padding: 0 0 0 1rem;
     padding-bottom: 1rem;
     color: white;
     :focus {
@@ -135,6 +181,11 @@ const ContactmeContainer = styled.div`
   }
 
   @media (max-width: 1200px) {
+    .sections {
+      h2 {
+        font-size: 4rem;
+      }
+    }
     .c-form {
       min-width: 25rem;
     }
@@ -143,6 +194,7 @@ const ContactmeContainer = styled.div`
     }
   }
   @media (max-width: 995px) {
+    padding: 0 1rem;
     .c-form {
       min-width: 20;
     }
@@ -184,5 +236,3 @@ const ContactmeContainer = styled.div`
     }
   }
 `;
-
-

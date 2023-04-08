@@ -41,4 +41,10 @@ const CustomThemeSwitch = styled.div`
       right: 4rem;
     }
   }
+
+  @media (max-width: 772px) {
+    .me {
+      right: 1rem !important;
+    }
+  }
 `;
