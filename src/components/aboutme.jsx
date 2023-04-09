@@ -42,7 +42,7 @@ function Aboutme() {
         </div>
         <div className="techStackUsed">  <p variants={fadeIn("down", 0.2)}
           initial={"hidden"}
-          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack of many used over the years.</p>
+          whileInView={"show"} className=" techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack of many used over the years.</p>
           <div className="stackContainer">
             <div className="stack">
               <div>  <ImHtmlFive className="individualStack" style={{ color: "#DD4B25" }} />
