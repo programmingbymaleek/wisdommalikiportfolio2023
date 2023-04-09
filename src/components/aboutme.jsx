@@ -40,12 +40,10 @@ function Aboutme() {
             </p>
           </div>
         </div>
-        <div className="techStackUsed">  <motion.p variants={fadeIn("down", 0.2)}
+        <div className="techStackUsed">  <p variants={fadeIn("down", 0.2)}
           initial={"hidden"}
-          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack of many used over the years.</motion.p>
-          <motion.div variants={fadeIn("up", .4)}
-            initial={"hidden"}
-            whileInView={"show"} className="stackContainer">
+          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack of many used over the years.</p>
+          <div className="stackContainer">
             <div className="stack">
               <div>  <ImHtmlFive className="individualStack" style={{ color: "#DD4B25" }} />
                 <IoLogoCss3 className="individualStack" style={{ color: "#0079C0" }} />
@@ -109,7 +107,7 @@ function Aboutme() {
               <SiFirebase className="individualStack" style={{ color: "#F7C62E" }} />
               <p>Google fireBase</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </AboutmeContainer >
