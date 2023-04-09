@@ -2,14 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import { SiRedux, SiTypescript, SiJquery, SiFirebase } from "react-icons/si"
-import { BsDatabaseFillGear } from "react-icons/bs"
-import { DiSass } from "react-icons/di"
+import { SiRedux, SiTypescript, SiJquery, SiFirebase, SiWebpack, SiVisualstudio, SiJest } from "react-icons/si"
+import { BsDatabaseFillGear, BsFillBootstrapFill } from "react-icons/bs"
+import { DiSass, DiGitBranch } from "react-icons/di"
 import { FaReact } from "react-icons/fa"
 import { TbBrandNextjs, TbBrandJavascript } from "react-icons/tb"
 import { ImHtmlFive } from "react-icons/im"
 import etl from '../assets/developer_entities/etl.png'
 import { IoLogoCss3 } from "react-icons/io"
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 
 
@@ -38,13 +40,21 @@ function Aboutme() {
             </p>
           </div>
         </div>
-        <div className="techStackUsed">  <p className="aboutMe" style={{ textAlign: "center" }}>Technology stack used over the years.</p>
-          <div className="stackContainer">
+        <div className="techStackUsed">  <motion.p variants={fadeIn("down", 0.2)}
+          initial={"hidden"}
+          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack used over the years.</motion.p>
+          <motion.div variants={fadeIn("up", .4)}
+            initial={"hidden"}
+            whileInView={"show"} className="stackContainer">
             <div className="stack">
               <div>  <ImHtmlFive className="individualStack" style={{ color: "#DD4B25" }} />
                 <IoLogoCss3 className="individualStack" style={{ color: "#0079C0" }} />
                 <TbBrandJavascript className="individualStack" style={{ color: "#D3B32A" }} /></div>
               <p>HTML,CSS, Js</p>
+            </div>
+            <div className="stack">
+              <BsFillBootstrapFill className="individualStack" style={{ color: "#7248B6" }} />
+              <p>Bootstrap</p>
             </div>
             <div className="stack">
               <DiSass className="individualStack" style={{ color: "#CB6899" }} />
@@ -71,6 +81,22 @@ function Aboutme() {
               <p>Redux</p>
             </div>
             <div className="stack">
+              <DiGitBranch className="individualStack" style={{ color: "#E4392C" }} />
+              <p>Git</p>
+            </div>
+            <div className="stack">
+              <SiVisualstudio className="individualStack" style={{ color: "#0173C1" }} />
+              <p>Vistual Studio</p>
+            </div>
+            <div className="stack">
+              <SiWebpack className="individualStack" style={{ color: "#1B72B6" }} />
+              <p>Webpack</p>
+            </div>
+            <div className="stack">
+              <SiJest className="individualStack" style={{ color: "#913F4B" }} />
+              <p>Jest</p>
+            </div>
+            <div className="stack">
               <BsDatabaseFillGear className="individualStack" />
               <p>Relational Databases</p>
             </div>
@@ -78,10 +104,10 @@ function Aboutme() {
               <SiFirebase className="individualStack" style={{ color: "#F7C62E" }} />
               <p>Google fireBase</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </AboutmeContainer>
+    </AboutmeContainer >
   );
 }
 
@@ -101,7 +127,8 @@ const AboutmeContainer = styled.div`
     display:flex;
      background:rgba(0,0,0,.3);
      border-radius:1rem;
-    justify-content:space-between; 
+    justify-content:center; 
+    align-items:center;
     padding:1rem;
     text-transform:uppercase;
     gap:1.5rem;
@@ -151,6 +178,11 @@ const AboutmeContainer = styled.div`
     font-family: "Shantell Sans", cursive;
     font-size: 2.5rem;
     text-transform: uppercase;
+  }
+  .techStackHeader{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Rubik Wet Paint", cursive;
   }
   .spanClass {
     font-family: "Rubik Wet Paint", cursive;

@@ -70,6 +70,15 @@ function Contactme() {
 export default Contactme;
 
 const ContactmeContainer = styled.div`
+textarea, input{
+  ::placeholder{
+    color:white;
+    opacity:0.7;
+  }
+}
+::placeholder{
+  color:white !important;
+}
   margin-top: 15rem;
   .c-form {
     display: flex;
@@ -94,6 +103,7 @@ const ContactmeContainer = styled.div`
     width: 30rem;
     outline: none;
     caret-color: white;
+    padding: 0 0 0 1rem;
     padding-bottom: 1rem;
     color: white;
     :focus {
@@ -135,6 +145,11 @@ const ContactmeContainer = styled.div`
   }
 
   @media (max-width: 1200px) {
+    .sections{
+      h2{
+        font-size:4rem;
+      }
+    }
     .c-form {
       min-width: 25rem;
     }
@@ -143,6 +158,7 @@ const ContactmeContainer = styled.div`
     }
   }
   @media (max-width: 995px) {
+    padding: 0 1rem;
     .c-form {
       min-width: 20;
     }
