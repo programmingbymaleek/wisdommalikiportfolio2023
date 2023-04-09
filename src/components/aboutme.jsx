@@ -2,6 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { SiRedux, SiTypescript, SiJquery, SiFirebase } from "react-icons/si"
+import { BsDatabaseFillGear } from "react-icons/bs"
+import { DiSass } from "react-icons/di"
+import { FaReact } from "react-icons/fa"
+import { TbBrandNextjs, TbBrandJavascript } from "react-icons/tb"
+import { ImHtmlFive } from "react-icons/im"
+import etl from '../assets/developer_entities/etl.png'
+import { IoLogoCss3 } from "react-icons/io"
+
+
+
+
 
 function Aboutme() {
   const [ref, inView] = useInView({ threshold: 0.5 });
@@ -26,6 +38,48 @@ function Aboutme() {
             </p>
           </div>
         </div>
+        <div className="techStackUsed">  <p className="aboutMe" style={{ textAlign: "center" }}>Technology stack used over the years.</p>
+          <div className="stackContainer">
+            <div className="stack">
+              <div>  <ImHtmlFive className="individualStack" style={{ color: "#DD4B25" }} />
+                <IoLogoCss3 className="individualStack" style={{ color: "#0079C0" }} />
+                <TbBrandJavascript className="individualStack" style={{ color: "#D3B32A" }} /></div>
+              <p>HTML,CSS, Js</p>
+            </div>
+            <div className="stack">
+              <DiSass className="individualStack" style={{ color: "#CB6899" }} />
+              <p>Sass</p>
+            </div>
+            <div className="stack">
+              <SiJquery className="individualStack" style={{ color: "#1163A4" }} />
+              <p>Jquery</p>
+            </div>
+            <div className="stack">
+              <SiTypescript className="individualStack" style={{ color: "#2F74C0" }} />
+              <p>TypeScript</p>
+            </div>
+            <div className="stack">
+              <FaReact className="individualStack" style={{ color: "#00D1F7" }} />
+              <p>React</p>
+            </div>
+            <div className="stack">
+              <TbBrandNextjs className="individualStack" style={{ color: "#cbced8" }} />
+              <p>NextJs</p>
+            </div>
+            <div className="stack">
+              <SiRedux className="individualStack" style={{ color: "#7248B6" }} />
+              <p>Redux</p>
+            </div>
+            <div className="stack">
+              <BsDatabaseFillGear className="individualStack" />
+              <p>Relational Databases</p>
+            </div>
+            <div className="stack">
+              <SiFirebase className="individualStack" style={{ color: "#F7C62E" }} />
+              <p>Google fireBase</p>
+            </div>
+          </div>
+        </div>
       </div>
     </AboutmeContainer>
   );
@@ -37,6 +91,37 @@ const AboutmeContainer = styled.div`
   @media (max-width: 460px) {
     .yearsOFExperience {
       flex-direction: column;
+    }
+  }
+
+  .techStackUsed{
+    margin-top:6rem;
+  }
+  .stackContainer{
+    display:flex;
+     background:rgba(0,0,0,.3);
+     border-radius:1rem;
+    justify-content:space-between; 
+    padding:1rem;
+    text-transform:uppercase;
+    gap:1.5rem;
+    flex-wrap:wrap;
+    .stack{
+      p{
+        letter-spacing:.1rem;
+      }
+      font-family: "Shantell Sans", cursive;
+      font-weight:bold;
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      flex-direction:column;
+      flex-wrap:no-wrap;
+      .individualStack{
+        width:3rem;
+        height:3rem;
+      }
+
     }
   }
   padding: 2rem 0;
