@@ -3,15 +3,15 @@ import styled from "styled-components";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { SiRedux, SiTypescript, SiJquery, SiFirebase, SiWebpack, SiVisualstudio, SiJest } from "react-icons/si"
-import { BsDatabaseFillGear, BsFillBootstrapFill } from "react-icons/bs"
+import { BsDatabaseFillGear, BsFillBootstrapFill, BsFiletypePhp } from "react-icons/bs"
 import { DiSass, DiGitBranch } from "react-icons/di"
 import { FaReact } from "react-icons/fa"
 import { TbBrandNextjs, TbBrandJavascript } from "react-icons/tb"
 import { ImHtmlFive } from "react-icons/im"
-import etl from '../assets/developer_entities/etl.png'
 import { IoLogoCss3 } from "react-icons/io"
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { BsPrefixComponent } from "react-bootstrap/esm/helpers";
 
 
 
@@ -42,7 +42,7 @@ function Aboutme() {
         </div>
         <div className="techStackUsed">  <motion.p variants={fadeIn("down", 0.2)}
           initial={"hidden"}
-          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack used over the years.</motion.p>
+          whileInView={"show"} className="techStackHeader" style={{ textAlign: "center", fontSize: "2rem" }}>Technology stack of many used over the years.</motion.p>
           <motion.div variants={fadeIn("up", .4)}
             initial={"hidden"}
             whileInView={"show"} className="stackContainer">
@@ -95,6 +95,11 @@ function Aboutme() {
             <div className="stack">
               <SiJest className="individualStack" style={{ color: "#913F4B" }} />
               <p>Jest</p>
+            </div>
+
+            <div className="stack">
+              <BsFiletypePhp className="individualStack" style={{ color: "#4B568C" }} />
+              <p>Php</p>
             </div>
             <div className="stack">
               <BsDatabaseFillGear className="individualStack" />
@@ -182,7 +187,8 @@ const AboutmeContainer = styled.div`
   .techStackHeader{
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-family: "Rubik Wet Paint", cursive;
+    font-family: "Shantell Sans", cursive;
+    font-weight:bold;
   }
   .spanClass {
     font-family: "Rubik Wet Paint", cursive;
