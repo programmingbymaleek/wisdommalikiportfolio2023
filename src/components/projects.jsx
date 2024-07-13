@@ -6,9 +6,15 @@ import { useContext } from "react";
 import { CreatePreviewContext } from "./context/sitePreviewContext";
 import { fadeIn } from "../variants";
 import { CreatePreviewMovieContext } from "./context/moviePreviewContext";
+import { CreatePreviewContext_2 } from "./context/sitePreviewContext_2";
 function Projects() {
   const { eccommerceSiteTemplate, SiteAsset } =
     useContext(CreatePreviewContext);
+  const { ecommerceSiteTemplate2, SiteAsset2 } = useContext(
+    CreatePreviewContext_2
+  );
+
+  console.log("this is the site assest 2 ", SiteAsset2);
   const { movieBaseTemplate, SiteAssetM } = useContext(
     CreatePreviewMovieContext
   );
@@ -22,6 +28,10 @@ function Projects() {
           initial={"hidden"}
           whileInView={"show"}
         >
+          <PreviewSite
+            SitePreview={ecommerceSiteTemplate2}
+            SiteAsset={SiteAsset2}
+          />
           <PreviewSite
             SitePreview={eccommerceSiteTemplate}
             SiteAsset={SiteAsset}
